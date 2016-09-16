@@ -1,5 +1,4 @@
-# test-task
-Тестовое задание
+# Тестовое задание
 
 ## Задание №1
 Реализовать фунцию ```asyncForEach()``` и написать для нее юнит-тесты, использую любой тест-фреймворк:
@@ -8,7 +7,7 @@ console.log('Before');
 asyncForEach([1, 2, 3], function(item, index, next) {
   console.log('Item %s at %s', item, index);
   setTimeout(next, 10);
-}, function() {
+}).then(function() {
   console.log('Done');
 });
 console.log('After');
